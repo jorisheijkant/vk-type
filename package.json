@@ -1,14 +1,23 @@
 {
   "name": "vk-type",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Volkskrant typografie",
   "year": "2018",
   "main": "index.js",
   "description": "De typografie van de Volkskrant Kijk Verderredactie gebundeld.",
   "author": "Joris Heijkant",
   "license": "MIT",
+  "scripts": {
+    "compile": "node-sass css/_compile.scss css/compiled/style.css",
+    "build": "node-sass test/css/scss/_style.scss test/css/compiled/style.css",
+    "dev": "webpack-dev-server --inline --progress"
+  },
   "dependencies": {
     "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1"
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.17",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
