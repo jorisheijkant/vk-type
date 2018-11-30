@@ -1,0 +1,14 @@
+{
+  "name": "vk-type",
+  "version": "1.0.0",
+  "title": "Volkskrant typografie",
+  "year": "2018",
+  "main": "index.js",
+  "description": "De typografie van de Volkskrant Kijk Verderredactie gebundeld.",
+  "author": "Joris Heijkant",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1"
+  }
+}
