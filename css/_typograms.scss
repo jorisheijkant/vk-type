@@ -8,7 +8,7 @@
 
 
 // Set up a global typogram variable
-$typogram-names: (h1,h2,h3,h4,body,header,button,quote,caption,lead,credits, note, alt);
+$typogram-names: (h1,h2,h3,h4,body,header,button,quote,caption,lead,credits, note, alt, dropcap);
 
 // define base sizes, equals 1em.
 $base-size: 18;
@@ -161,10 +161,10 @@ $buttontype: (
 // Blockquote
 $quote-font-family: $font-capitolium-news;
 $quote-font-sizes: (
-        null  : (get-rems(22), 1.2),
-        small : (get-rems(22), 1.2),
-        medium: (get-rems(25), 1.21),
-        large : (get-rems(25), 1.21),
+        null  : (get-rems(20), 1.2),
+        small : (get-rems(20), 1.2),
+        medium: (get-rems(22), 1.21),
+        large : (get-rems(22), 1.21),
 );
 $quote: (
         style : $quote-font-family,
@@ -182,6 +182,19 @@ $alt-font-sizes: (
 $alt: (
         style : $alt-font-family,
         sizes : $alt-font-sizes
+);
+
+// dropcap 		– Voor dropcaps
+$dropcap-font-family: $font-capitolium-head;
+$dropcap-font-sizes: (
+        null  : (get-rems(92), 0.67),
+        small : (get-rems(92), 0.67),
+        medium: (get-rems(192), 0.7),
+        large : (get-rems(192), 0.7),
+);
+$dropcap: (
+        style : $dropcap-font-family,
+        sizes : $dropcap-font-sizes
 );
 
 //

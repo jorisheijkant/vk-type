@@ -1,6 +1,8 @@
 // First import basic styling, needed for correct rendering of the page
 @import "dependencies";
-@import "test-page";
 
 // Then import the central sass file
-@import "../../../css/compile"
+@import "compile";
+
+// Page styling
+@import "test-page";

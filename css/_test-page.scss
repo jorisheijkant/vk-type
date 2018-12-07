@@ -59,6 +59,7 @@ img {
   max-width: 1000px;
   @include flex-center();
   text-align: center;
+  padding-top: 20px;
 }
 
 figure {
@@ -81,6 +82,8 @@ figure {
   margin: #{0.5 * $spacing};
   opacity: 0.8;
   cursor: pointer;
+  font-family: $font-benton;
+  font-size: 14px;
 }
 
 .button-code-active {

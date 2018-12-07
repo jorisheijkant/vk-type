@@ -45,3 +45,17 @@
 .code-small {
   font-size: 1.5rem;
 }
+
+.show-dropcap:first-of-type::first-letter {
+  @include typogram($dropcap);
+  font-weight: 300;
+  padding-top: 11px;
+  padding-right: 10px;
+  float: left;
+
+  @include respond-from($screen-sm) {
+    padding-top: 16px;
+    padding-left: 2px;
+    padding-right: 18px;
+  }
+}

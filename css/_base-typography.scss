@@ -41,7 +41,7 @@ table {
 
 h1 {
   @include typogram($h1);
-  font-weight: bold;
+  font-weight: normal;
   @include respond-until($screen-md) {
     letter-spacing: -.2px;
   }
@@ -105,11 +105,6 @@ figcaption {
 
 blockquote {
   @include typogram($quote);
-  font-weight: bold;
-  font-style: italic;
-  padding-left: 15px;
-  border-left: 1px solid #ccc;
-  margin-bottom: 30px;
 }
 
 form {
