@@ -1,9 +1,9 @@
 {
-  "name": "vk-type-test-page",
-  "version": "1.0.0",
+  "name": "vk-type",
+  "version": "1.0.2",
   "description": "Test page for VK type module",
   "author": "jorisheijkant <jorisheijkant@gmail.com>",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

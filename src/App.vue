@@ -216,4 +216,5 @@
 
 <style lang="scss">
 	@import "../css/style";
+	@import "../css/font-imports";
 </style>

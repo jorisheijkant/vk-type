@@ -4,5 +4,13 @@
 // Then import the central sass file
 @import "compile";
 
+// Import all of the separate files here
+@import "dependencies";
+@import 'type-utils';
+@import "fonts";
+@import 'typograms';
+@import 'base-typography';
+@import 'typography-classes';
+
 // Page styling
 @import "test-page";

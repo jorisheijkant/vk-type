@@ -9,14 +9,6 @@ $font-serif-text: $font-capitolium-news;
 $font-serif-header: $font-capitolium-head;
 $font-sansserif: $font-benton;
 
-//to add a custom font, uncomment:
-
-
-//$customFontName: 'CustomFontName';
-//$font-custom: $customFontName , Helvetica, Arial, sans-serif;
-
-
-
 $benton-font: (
                 (Light, $weight-light, normal),
                 (Book, normal, normal),
@@ -43,48 +35,3 @@ $capitolium-news-font: (
                 (Italic, normal, italic),
                 (Reg, normal, normal)
 );
-
-$font-dir: '../static/fonts/';
-
-//to add a custom font, uncomment:
-
-
-//@font-face {
-//  font-family: $font-custom;
-//  font-weight: normal;
-//  font-style: normal;
-//  src: url('#{$font-dir}#{$font-custom}.woff2') format('woff2'),
-//  url('#{$font-dir}#{$font-custom}.woff') format('woff');
-//}
-
-
-
-@each $id, $weight, $style in $benton-font {
-  @font-face {
-    font-family: 'Benton';
-    font-weight: $weight;
-    font-style: $style;
-    src: url('#{$font-dir}BentonSans#{$id}.woff2') format('woff2'),
-    url('#{$font-dir}BentonSans#{$id}.woff') format('woff');
-  }
-}
-
-@each $id, $weight, $style in $capitolium-head-font {
-  @font-face {
-    font-family: 'Capitolium Head';
-    font-weight: $weight;
-    font-style: $style;
-    src: url('#{$font-dir}CapitoliumHead#{$id}.woff2') format('woff2'),
-    url('#{$font-dir}CapitoliumHead#{$id}.woff') format('woff');
-  }
-}
-
-@each $id, $weight, $style in $capitolium-news-font {
-  @font-face {
-    font-family: 'Capitolium News';
-    font-weight: $weight;
-    font-style: $style;
-    src: url('#{$font-dir}CapitoliumNews#{$id}.woff2') format('woff2'),
-    url('#{$font-dir}CapitoliumNews#{$id}.woff') format('woff');
-  }
-}
